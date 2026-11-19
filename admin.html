@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-bg="gradient" data-font="medium">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OlamDev MCB201 - Admin Dashboard</title>
+<meta name="theme-color" content="#2563eb">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='96' fill='%232563eb'/%3E%3Ccircle cx='256' cy='230' r='110' fill='none' stroke='white' stroke-width='36'/%3E%3Ctext x='256' y='430' font-size='84' font-weight='700' text-anchor='middle' fill='white' font-family='Arial'%3EMCB201%3C/text%3E%3C/svg%3E">
+<script>try{var s=JSON.parse(localStorage.getItem('olamdev_settings')||'{}'),h=document.documentElement;if(s.theme)h.dataset.theme=s.theme;if(s.bg)h.dataset.bg=s.bg;if(s.font)h.dataset.font=s.font;}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html" style="text-decoration:none"><span class="logo">OLAMDEV</span><span class="tag">ADMIN</span></a>
+  <div class="top-actions"><a class="icon-btn" href="index.html" title="Back to quiz">&#127968;</a><button class="icon-btn hidden" id="logoutBtn" title="Logout">&#9099;</button></div>
+</header>
+<main class="container" id="app"><div class="card center"><div class="spinner"></div><p class="muted">Loading...</p></div></main>
+<footer class="footer">&copy; OlamDev &bull; Admin Dashboard &bull; MCB201</footer>
+<div id="toast" class="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="config.local.js" onerror="void 0"></script>
+<script src="supabase-config.js"></script>
+<script src="questions.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

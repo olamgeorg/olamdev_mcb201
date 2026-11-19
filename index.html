@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-bg="gradient" data-font="medium">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OlamDev MCB201 Quiz</title>
+<meta name="description" content="OlamDev MCB201 Quiz - Microbiology 201 - Microbiology">
+<meta name="theme-color" content="#2563eb">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='96' fill='%232563eb'/%3E%3Ccircle cx='256' cy='230' r='110' fill='none' stroke='white' stroke-width='36'/%3E%3Ctext x='256' y='430' font-size='84' font-weight='700' text-anchor='middle' fill='white' font-family='Arial'%3EMCB201%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%232563eb'/%3E%3Ccircle cx='256' cy='230' r='110' fill='none' stroke='white' stroke-width='36'/%3E%3Ctext x='256' y='430' font-size='84' font-weight='700' text-anchor='middle' fill='white' font-family='Arial'%3EMCB201%3C/text%3E%3C/svg%3E">
+<script>
+/* apply saved theme before paint (no flash) */
+try{var s=JSON.parse(localStorage.getItem('olamdev_settings')||'{}'),h=document.documentElement;
+if(s.theme)h.dataset.theme=s.theme;if(s.bg)h.dataset.bg=s.bg;if(s.font)h.dataset.font=s.font;}catch(e){}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="topbar" class="topbar hidden">
+  <button class="brand" data-act="home" aria-label="Home">
+    <span class="logo">OLAMDEV</span><span class="tag">MCB201</span>
+  </button>
+  <div class="top-actions">
+    <button class="icon-btn hidden" id="installBtn" data-act="install" title="Install App">&#11015;</button>
+    <button class="icon-btn" data-act="scores" title="My Scores">&#128200;</button>
+    <a class="icon-btn hidden" id="adminLink" href="admin.html" title="Admin Dashboard">&#128737;</a>
+    <button class="icon-btn" data-act="settings" title="Settings">&#9881;</button>
+  </div>
+</header>
+
+<main class="container">
+  <section id="screen-boot" class="screen"><div class="card center"><div class="spinner"></div><p class="muted">Loading OlamDev MCB201 Quiz...</p></div></section>
+  <section id="screen-auth" class="screen hidden"></section>
+  <section id="screen-home" class="screen hidden"></section>
+  <section id="screen-quiz" class="screen hidden"></section>
+  <section id="screen-result" class="screen hidden"></section>
+  <section id="screen-scores" class="screen hidden"></section>
+  <section id="screen-settings" class="screen hidden"></section>
+</main>
+
+<footer class="footer">&copy; OlamDev &bull; olamdev_mcb201 &bull; Microbiology 201</footer>
+<div id="toast" class="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="config.local.js" onerror="void 0"></script>
+<script src="supabase-config.js"></script>
+<script src="questions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
