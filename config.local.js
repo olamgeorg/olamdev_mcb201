@@ -2,5 +2,5 @@
    On Vercel the keys come from Environment Variables instead. */
 window.OLAMDEV_CONFIG = {
   url: "https://otldatnfyvonnfizmxce.supabase.co",
-  key: "sb_publishable_zjQ3tYeM1rCpwtkQOIC-tA_Ak4-vl47"
+  key: "sb_publishable_2APp_m8dzG_D3jByrIZsiA_JJxYQX2F",
 };
